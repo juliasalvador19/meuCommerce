@@ -7,11 +7,12 @@
         <title>Meu Commerce</title>
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     </head>
 
     <body>
         <nav class="navbar navbar-light bg-light justify-content-between">
-            <a class="navbar-brand" style="margin:0 10px"><strong>Meu Commerce - Julia Salvador</strong></a>   
+            <a class="navbar-brand" style="margin:0 10px"><strong><i class="bi bi-truck"></i> Meu Commerce - Julia Salvador</strong></a>   
             <a class="btn btn-success" style="margin:0 10px" href="?pagina=sacola">Sacola
                 <?php if (isset($_SESSION['sacola'])) {
                     echo '(' . count($_SESSION['sacola']) . ')';
