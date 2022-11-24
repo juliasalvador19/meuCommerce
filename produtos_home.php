@@ -24,7 +24,7 @@ if (empty($linha_categoria['categoria_pai'])) {
         <div class="card-body">
             <h5 class="card-title"><?php echo $produto['descricao']; ?></h5>
             <p class="card-text"><?php echo $produto['resumo']; ?></p>
-            <a href="?pagina=produto&id=<?php echo $produto['id']; ?>" class="btn btn-primary">Detalhes</a>
+            <a href="?pagina=produto&id=<?php echo $produto['id']; ?>" class="btn btn-success">Detalhes</a>
         </div>
     </div>
     <?php }

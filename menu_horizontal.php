@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
 <a class="btn btn-success" href="?pagina=sacola">
-    Carrinho
+    Sacola
 
     <?php if (isset($_SESSION['sacola'])) {
         echo '(' . count($_SESSION['sacola']) . ')';

@@ -5,10 +5,10 @@ $sql_prepara->execute();
 
 while ($categoria = $sql_prepara->fetch()) {
     if (!empty($categoria['categoria_pai'])) {
-        $identacao = '&nbsp;&nbsp;&nbsp;';
+        $identacao = '&nbsp;&nbsp;&nbsp;&nbsp;';
     } else {
         $identacao = '';
     }
-    echo "{$identacao}<a href=\"?pagina=produtos&categoria={$categoria['id']}\" class=\"btn btn-link\">{$categoria['descricao']}</a><br>";
+    echo "{$identacao}<a style='text-decoration:none; color:black;' href=\"?pagina=produtos&categoria={$categoria['id']}\" class=\"btn btn-link\">{$categoria['descricao']}</a><br>";
 }
 ?>

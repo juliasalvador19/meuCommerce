@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION['sacola'])) { ?>
 <form method="post">
-    <input class="btn btn-danger" type="submit" name="limpar_sacola" value="Limpar sacola">
+    <input class="btn btn-danger" type="submit" name="limpar_sacola" value="Limpar carrinho">
 </form>
 <hr>
 <table class="table table-striped">
@@ -42,8 +42,8 @@ if (isset($_SESSION['sacola'])) { ?>
     </tbody>
 </table>
 
-<a class="btn btn-primary" href="?pagina=realizar_pedido">Realizar pedido</a>
+<a class="btn btn-success" href="?pagina=realizar_pedido">Realizar pedido</a>
 
 
-<?php } else {echo '<h3>Nenhum produto adicinado a sacola!';}
+<?php } else {echo '<h3>Nenhum produto foi adicinado ao carrinho!';}
 ?>
